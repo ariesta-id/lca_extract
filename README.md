@@ -1,8 +1,8 @@
 # Usage
 
-Install (`uv`)[https://docs.astral.sh/uv/getting-started/installation/]
+Install [`uv` (link)](https://docs.astral.sh/uv/getting-started/installation/)
 
-Create replicate.com account, have some credits, and generate an API key from there.
+Create [replicate.com](https://replicate.com/) account, have some credits, and generate an API key from there.
 
 ```bash
 export REPLICATE_API_TOKEN=r8_2Bg**********************************
@@ -35,4 +35,4 @@ Code will generate at least one file, `txt`, that is the LLM's response. For eac
 
 # Paper markdown conversion
 
-I used (docling)[https://docling-project.github.io/docling/] to convert from PDF to markdown. I also used (Obsidian Web Clipper)[https://obsidian.md/clipper] for online paper conversion to markdown. 
+I used [docling](https://docling-project.github.io/docling/) to convert from PDF to markdown. I also used [Obsidian Web Clipper](https://obsidian.md/clipper) for online paper conversion to markdown. 
