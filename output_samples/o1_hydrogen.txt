@@ -1,0 +1,329 @@
+```yaml
+- process: PEM Water Electrolysis Reaction (Section 2.2)
+  output_reference:
+    output: hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    water:
+      quote: "From stoichiometry results, we know that 9 kg H2O are required for producing 1 kg H2."
+      unit: kg
+      value: 9
+      is_exact: True
+    electricity:
+      quote: "In addition, 55 kWh of electricity are necessary for water splitting at an efficiency of 60% LHV."
+      unit: kWh
+      value: 55
+      is_exact: True
+  output:
+    hydrogen:
+      quote: "The chosen functional unit is defined as 1 kg of dried hydrogen produced in Germany in a PEMWE plant, with a standard quality of 5.0 and 30 bar pressure at 60 °C operating temperature."
+      unit: kg
+      value: 1
+      is_exact: True
+    direct_co2_emissions:
+      quote: "As can be seen in Fig. 1, the direct CO2 emissions of a PEMWE system are zero."
+      unit: kg
+      value: 0
+      is_exact: True
+
+- process: PEMWE Stack Production (2017, 1 MW)
+  output_reference:
+    output: PEMWE stack
+    unit: piece
+    value: 1
+    is_exact: True
+  input:
+    titanium:
+      quote: "Table 2"
+      unit: kg
+      value: 528
+      is_exact: True
+    aluminum:
+      quote: "Table 2"
+      unit: kg
+      value: 27
+      is_exact: True
+    stainless_steel:
+      quote: "Table 2"
+      unit: kg
+      value: 100
+      is_exact: True
+    copper:
+      quote: "Table 2"
+      unit: kg
+      value: 4.5
+      is_exact: True
+    nafion:
+      quote: "Table 2"
+      unit: kg
+      value: 16
+      is_exact: True
+    activated_carbon:
+      quote: "Table 2"
+      unit: kg
+      value: 9
+      is_exact: True
+    iridium:
+      quote: "Table 2"
+      unit: kg
+      value: 0.75
+      is_exact: True
+    platinum:
+      quote: "Table 2"
+      unit: kg
+      value: 0.075
+      is_exact: True
+  output:
+    PEMWE_stack:
+      quote: "The total active cell area for a 1 MW stack is 37 m^2 for state-of-the-art..."
+      unit: piece
+      value: 1
+      is_exact: True
+
+- process: PEMWE Stack Production (Near Future, 1 MW)
+  output_reference:
+    output: PEMWE stack
+    unit: piece
+    value: 1
+    is_exact: True
+  input:
+    titanium:
+      quote: "Table 2"
+      unit: kg
+      value: 37
+      is_exact: True
+    aluminum:
+      quote: "Table 2"
+      unit: kg
+      value: 54
+      is_exact: True
+    stainless_steel:
+      quote: "Table 2"
+      unit: kg
+      value: 40
+      is_exact: True
+    copper:
+      quote: "Table 2"
+      unit: kg
+      value: 9
+      is_exact: True
+    nafion:
+      quote: "Table 2"
+      unit: kg
+      value: 2
+      is_exact: True
+    activated_carbon:
+      quote: "Table 2"
+      unit: kg
+      value: 4.5
+      is_exact: True
+    iridium:
+      quote: "Table 2"
+      unit: kg
+      value: 0.037
+      is_exact: True
+    platinum:
+      quote: "Table 2"
+      unit: kg
+      value: 0.01
+      is_exact: True
+  output:
+    PEMWE_stack:
+      quote: "Design improvements are expected to reduce catalyst and bipolar plate thickness, leading to strong decrease in material usage."
+      unit: piece
+      value: 1
+      is_exact: True
+
+- process: PEMWE BOP Production (1 MW)
+  output_reference:
+    output: PEMWE BOP
+    unit: piece
+    value: 1
+    is_exact: True
+  input:
+    low_alloyed_steel:
+      quote: "Table 3"
+      unit: t
+      value: 4.8
+      is_exact: True
+    high_alloyed_steel:
+      quote: "Table 3"
+      unit: t
+      value: 1.9
+      is_exact: True
+    aluminum:
+      quote: "Table 3"
+      unit: t
+      value: 0.1
+      is_exact: True
+    copper:
+      quote: "Table 3"
+      unit: t
+      value: 0.1
+      is_exact: True
+    plastic:
+      quote: "Table 3"
+      unit: t
+      value: 0.3
+      is_exact: True
+    electronic_material:
+      quote: "Table 3"
+      unit: t
+      value: 1.1
+      is_exact: True
+    process_material:
+      quote: "Table 3"
+      unit: t
+      value: 0.2
+      is_exact: True
+    concrete:
+      quote: "Table 3"
+      unit: t
+      value: 5.6
+      is_exact: True
+  output:
+    PEMWE_BOP:
+      quote: "In many applications the whole PEMWE system is integrated in standardized 20 ft containers as depicted in Fig. 4."
+      unit: piece
+      value: 1
+      is_exact: True
+
+- process: Gas Purification (De-Oxo and Adsorption)
+  output_reference:
+    output: purified hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_for_adsorption:
+      quote: "Between 7100 and 8400 kJ are required to evaporate 1 kg H2O from silica [...] results in an energy demand of 0.05 kWh per kg dried H2 at 30 bar pressure."
+      unit: kWh
+      value: 0.05
+      is_exact: False
+    note: "The exact catalyst amount is not stated"
+  output:
+    purified_hydrogen:
+      quote: "Gas treatment of the oxygen (drying and purification) is only done if the oxygen is used in a subsequent process."
+      unit: kg
+      value: 1
+      is_exact: True
+    water_generated_de_oxo:
+      quote: "While removing the 800 ppm of oxygen, about 15 g of H2O is produced per kg of H2."
+      unit: g
+      value: 15
+      is_exact: False
+    water_saturated_from_separator:
+      quote: "The produced water from the de-oxo unit, together with the water vapor from the water-gas separator (7 g of H2O per kg of H2), is reduced to less than 5 ppm by a subsequent adsorptive drying process."
+      unit: g
+      value: 7
+      is_exact: False
+
+- process: PEMWE Operation (2017 Germany electricity mix)
+  output_reference:
+    output: hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_2017_mix:
+      quote: "With 2017 electricity mix of Germany, the global warming potential corresponds to 29.5 kg CO2 eq. for each kg of produced hydrogen."
+      unit: kWh
+      value: "not stated"
+      is_exact: False
+      note: "Paper does not explicitly give a unique kWh figure for this scenario."
+  output:
+    hydrogen:
+      quote: "The thoroughly and in-depth modeled components of the electrolyser have negligible influence on impact categories; thus, emissions are mainly determined by the electricity mix."
+      unit: kg
+      value: 1
+      is_exact: True
+    ghg_emissions:
+      quote: "With 2017 electricity mix of Germany, the global warming potential corresponds to 29.5 kg CO2 eq. for each kg of produced hydrogen."
+      unit: kg CO2 eq.
+      value: 29.5
+      is_exact: True
+
+- process: PEMWE Operation (2050 baseload scenario)
+  output_reference:
+    output: hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_2050_baseload_mix:
+      quote: "Referring to the electricity mix we received from an energy model emissions can be reduced to 11.5 kg CO2 eq. in base-load operation by the year 2050."
+      unit: kWh
+      value: "not stated"
+      is_exact: False
+      note: "Table 5 indicates 11.6 kg CO2 eq., text indicates 11.5 kg CO2 eq."
+  output:
+    hydrogen:
+      quote: "In a future (2050) base-load operation mode emissions are comparable to the reference system."
+      unit: kg
+      value: 1
+      is_exact: True
+    ghg_emissions:
+      quote: "Referring to the electricity mix we received from an energy model emissions can be reduced to 11.5 kg CO2 eq. in base-load operation by the year 2050."
+      unit: kg CO2 eq.
+      value: 11.5
+      is_exact: False
+      note: "There is a discrepancy in the paper: 11.6 kg CO2 eq. also appears in Table 5."
+
+- process: PEMWE Operation (2050 flexible scenario, 3000 h)
+  output_reference:
+    output: hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_2050_3000h_mix:
+      quote: "Using only the 3000 h of excess power from renewables in a year will allow for the reduction of the global warming potential to 3.3 kg CO2 eq."
+      unit: kWh
+      value: "not stated"
+      is_exact: False
+      note: "Table 5 indicates 3.0 kg CO2 eq., text indicates 3.3 kg CO2 eq."
+  output:
+    hydrogen:
+      quote: "Using only the 3000 h of excess power from renewables in a year will allow for the reduction of the global warming potential to 3.3 kg CO2 eq."
+      unit: kg
+      value: 1
+      is_exact: True
+    ghg_emissions:
+      quote: "Using only the 3000 h of excess power from renewables in a year will allow for the reduction of the global warming potential to 3.3 kg CO2 eq."
+      unit: kg CO2 eq.
+      value: 3.3
+      is_exact: False
+      note: "Paper text and table differ slightly on this figure."
+
+- process: Steam Methane Reforming reference
+  output_reference:
+    output: hydrogen
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    methane_feed:
+      quote: "The SMR method is a catalytic conversion of methane and steam to hydrogen and carbon dioxide. The method entails three steps: reforming or synthesis gas generation, water-gas shift and gas purification."
+      unit: not stated
+      value: "not stated"
+      is_exact: False
+      note: "Exact methane consumption not explicitly provided."
+  output:
+    hydrogen:
+      quote: "The hydrogen production efficiency of a SMR plant can be defined as the power flux of the hydrogen produced divided by the power flux of the methane consumed."
+      unit: kg
+      value: 1
+      is_exact: True
+    direct_carbon_dioxide:
+      quote: "Thus, the production of 1 kg H2 leads to direct emission of about 8.8 kg CO2."
+      unit: kg
+      value: 8.8
+      is_exact: True
+    total_co2_equivalent:
+      quote: "Conventional production of H2 in a steam reforming process with natural gas would emit 11.9 kg CO2 eq. per kg of H2."
+      unit: kg CO2 eq.
+      value: 11.9
+      is_exact: True
+```

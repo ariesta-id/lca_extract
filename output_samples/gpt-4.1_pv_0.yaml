@@ -1,0 +1,627 @@
+- process: Multi-crystalline Silicon PV Module Production
+  output_reference:
+    output: PV module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1. Materials and energy inputs in the production of Si and CdTe PV modules—per m^2 of module (excluding frames, commonly used for Si modules, http://ecoinvent.org/)"
+      unit: kg
+      value: 1.6
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 2.2
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 6.8
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 248
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1"
+      unit: MJ
+      value: 308
+      is_exact: True
+  output:
+    PV_module:
+      quote: "Table 7.1"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Mono-crystalline Silicon PV Module Production
+  output_reference:
+    output: PV module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.5
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 7.8
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 6.6
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 282
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1"
+      unit: MJ
+      value: 361
+      is_exact: True
+  output:
+    PV_module:
+      quote: "Table 7.1"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: CdTe PV Module Production
+  output_reference:
+    output: PV module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.065
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 19.2
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.6
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 2.0
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.001
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.67
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.4
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 59
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+  output:
+    PV_module:
+      quote: "Table 7.1"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: CPV Cell Production (GaInP/GaInAs/Ge, 1000 wafers)
+  output_reference:
+    output: CPV cell
+    unit: wafers
+    value: 1000
+    is_exact: True
+    note: "Corresponds to 915 kWp of GaInP/GaInAs/Ge terrestrial concentrator solar cell"
+  input:
+    wafer_precursors:
+      quote: "Table 7.2. Materials and energy inputs for processing 1000 wafers, corresponding to 915kWp of GaInP/GaInAs/Ge terrestrial concentrator solar cell"
+      unit: kg
+      value: 21.7
+      is_exact: True
+    contact_metals:
+      quote: "Table 7.2"
+      unit: kg
+      value: 3.4
+      is_exact: True
+    antireflection_coating:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.02
+      is_exact: True
+    hydrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 57.2
+      is_exact: True
+    nitrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.2
+      is_exact: True
+    photoresist:
+      quote: "Table 7.2"
+      unit: kg
+      value: 2.3
+      is_exact: True
+    solvents:
+      quote: "Table 7.2"
+      unit: kg
+      value: 1073.4
+      is_exact: True
+    acids:
+      quote: "Table 7.2"
+      unit: kg
+      value: 255.8
+      is_exact: True
+    bases:
+      quote: "Table 7.2"
+      unit: kg
+      value: 161.3
+      is_exact: True
+    electricity_MOVPE:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 2365
+      is_exact: True
+    electricity_other:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 470
+      is_exact: True
+  output:
+    CPV_cell:
+      quote: "Table 7.2"
+      unit: wafers
+      value: 1000
+      is_exact: True
+
+- process: CPV System Assembly (Amonix 7700, 60 kWp, 328 m^2)
+  output_reference:
+    output: CPV system
+    unit: system
+    value: 1
+    is_exact: True
+    note: "Amonix 7700, 60 kWp, 328 m^2 total area"
+  input:
+    semiconductor_cell:
+      quote: "Table 7.3. Material breakdown of the Amonix 7700"
+      unit: kg
+      value: 0.2
+      is_exact: True
+    steel_frame:
+      quote: "Table 7.3"
+      unit: kg
+      value: 6566
+      is_exact: True
+    acrylic_fresnel_lenses:
+      quote: "Table 7.3"
+      unit: kg
+      value: 1143
+      is_exact: True
+    aluminium_heat_sink:
+      quote: "Table 7.3"
+      unit: kg
+      value: 3086
+      is_exact: True
+    concrete_foundation:
+      quote: "Table 7.3"
+      unit: kg
+      value: 3126
+      is_exact: True
+    steel_hydraulic_drive:
+      quote: "Table 7.3"
+      unit: kg
+      value: 2724
+      is_exact: True
+    steel_pedestal_torque_tube:
+      quote: "Table 7.3"
+      unit: kg
+      value: 11260
+      is_exact: True
+    motor_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 16
+      is_exact: True
+    inverter_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 500
+      is_exact: True
+    transformer_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 100
+      is_exact: True
+    cables_copper_PVC:
+      quote: "Table 7.3"
+      unit: kg
+      value: 35
+      is_exact: True
+    controller_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 18
+      is_exact: True
+    sensor_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 1.4
+      is_exact: True
+    anemometer_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 0.1
+      is_exact: True
+  output:
+    CPV_system:
+      quote: "Table 7.3"
+      unit: system
+      value: 1
+      is_exact: True
+
+- process: Rooftop BOS (On-roof, per m^2)
+  output_reference:
+    output: BOS
+    unit: m^2
+    value: 1
+    is_exact: True
+    note: "On-roof mounting system (Phönix, TectoSun)"
+  input:
+    stainless_steel:
+      quote: "Table 7.4. LCI of balance of system"
+      unit: kg
+      value: 0.49
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4"
+      unit: kg
+      value: 0.54
+      is_exact: True
+    frame:
+      quote: "Table 7.4"
+      unit: kg
+      value: 3.04
+      is_exact: True
+    copper_DC_cable:
+      quote: "Table 7.4"
+      unit: g
+      value: 83.0
+      is_exact: True
+    TPE_DC_cable:
+      quote: "Table 7.4"
+      unit: g
+      value: 64.0
+      is_exact: True
+    steel_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 78
+      is_exact: True
+    aluminium_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 682
+      is_exact: True
+    copper_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 2
+      is_exact: True
+    polycarbonate_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 68
+      is_exact: True
+    ABS_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 148
+      is_exact: True
+    other_plastics_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 5.4
+      is_exact: True
+    printed_circuit_board_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 100
+      is_exact: True
+    connector_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 50
+      is_exact: True
+    transformers_wire_wound_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 310
+      is_exact: True
+    coils_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 74
+      is_exact: True
+    transistor_diode_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 10
+      is_exact: True
+    capacitor_film_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 72
+      is_exact: True
+    capacitor_electrolytic_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 54
+      is_exact: True
+    other_electric_components_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 20
+      is_exact: True
+  output:
+    BOS:
+      quote: "Table 7.4"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Rooftop BOS (In-roof, per m^2)
+  output_reference:
+    output: BOS
+    unit: m^2
+    value: 1
+    is_exact: True
+    note: "In-roof mounting system (Schletter, Plandach 5)"
+  input:
+    stainless_steel:
+      quote: "Table 7.4"
+      unit: kg
+      value: 0.28
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4"
+      unit: kg
+      value: 1.21
+      is_exact: True
+    copper_DC_cable:
+      quote: "Table 7.4"
+      unit: g
+      value: 83.0
+      is_exact: True
+    TPE_DC_cable:
+      quote: "Table 7.4"
+      unit: g
+      value: 64.0
+      is_exact: True
+    steel_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 78
+      is_exact: True
+    aluminium_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 682
+      is_exact: True
+    copper_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 2
+      is_exact: True
+    polycarbonate_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 68
+      is_exact: True
+    ABS_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 148
+      is_exact: True
+    other_plastics_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 5.4
+      is_exact: True
+    printed_circuit_board_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 100
+      is_exact: True
+    connector_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 50
+      is_exact: True
+    transformers_wire_wound_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 310
+      is_exact: True
+    coils_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 74
+      is_exact: True
+    transistor_diode_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 10
+      is_exact: True
+    capacitor_film_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 72
+      is_exact: True
+    capacitor_electrolytic_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 54
+      is_exact: True
+    other_electric_components_inverter:
+      quote: "Table 7.4"
+      unit: g
+      value: 20
+      is_exact: True
+  output:
+    BOS:
+      quote: "Table 7.4"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Ground-mount BOS (Springerville, per MWp)
+  output_reference:
+    output: BOS
+    unit: MWp
+    value: 1
+    is_exact: False
+    note: "Values are per MWp, based on Table 7.5 for the 3.5MW Tucson Electric Power Generating plant in Springerville, AZ"
+  input:
+    PV_support_structure:
+      quote: "Table 7.5. Mass balance of major components for the 3.5MW Tucson Electric Power Generating plant in Springerville, AZ, based on 30 years of operation"
+      unit: kg
+      value: 16821
+      is_exact: True
+    module_interconnections:
+      quote: "Table 7.5"
+      unit: kg
+      value: 453
+      is_exact: True
+    junction_boxes:
+      quote: "Table 7.5"
+      unit: kg
+      value: 1385
+      is_exact: True
+    conduits_and_fittings:
+      quote: "Table 7.5"
+      unit: kg
+      value: 6561
+      is_exact: True
+    wire_and_grounding_devices:
+      quote: "Table 7.5"
+      unit: kg
+      value: 5648
+      is_exact: True
+    inverters_and_transformers:
+      quote: "Table 7.5"
+      unit: kg
+      value: 28320
+      is_exact: True
+    grid_connections:
+      quote: "Table 7.5"
+      unit: kg
+      value: 1726
+      is_exact: True
+    office_facilities:
+      quote: "Table 7.5"
+      unit: kg
+      value: 20697
+      is_exact: True
+    concrete:
+      quote: "Table 7.5"
+      unit: kg
+      value: 76417
+      is_exact: True
+    miscellaneous:
+      quote: "Table 7.5"
+      unit: kg
+      value: 5806
+      is_exact: True
+    frame:
+      quote: "Table 7.5"
+      unit: kg
+      value: 18141
+      is_exact: True
+  output:
+    BOS:
+      quote: "Table 7.5"
+      unit: MWp
+      value: 1
+      is_exact: False
+      note: "Values are per MWp, derived from total for 3.5 MW plant"

@@ -1,0 +1,57 @@
+Looking at this paper on PEMWE (Proton Exchange Membrane Water Electrolysis) for hydrogen production, I can identify the main hydrogen generation process. Let me work through this step-by-step.
+
+The paper primarily focuses on the operational phase of hydrogen production via PEMWE, as the authors explicitly state that "The thoroughly and in-depth modeled components of the electrolyser have negligible influence on impact categories; thus, emissions are mainly determined by the electricity mix."
+
+From Figure 8, it's shown that the PEMWE stack contributes less than 1% and the Balance of Plant (BOP) contributes only around 4% to the global warming potential, while electricity supply is responsible for 96%.
+
+**Main Process Identified:**
+
+The core process is the complete PEMWE system that takes water and electricity as inputs and produces dried hydrogen at industrial quality. The paper provides specific quantitative data for this process.
+
+**Key Data Extracted:**
+
+- Electricity consumption: "55 kWh of electricity are necessary for water splitting at an efficiency of 60% LHV" plus "Energy demand of 0.05 kWh per kg dried H2" for the drying step
+- Water consumption: "9 kg H2O are required for producing 1 kg H2" 
+- Functional unit: "1 kg of dried hydrogen produced in Germany in a PEMWE plant, with a standard quality of 5.0 and 30 bar pressure"
+
+Here is the LCA process definition:
+
+```yaml
+- process: Proton Exchange Membrane Water Electrolysis (PEMWE) Hydrogen Production
+  output_reference:
+    output: hydrogen_dried
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_electrolysis:
+      quote: "55 kWh of electricity are necessary for water splitting at an efficiency of 60% LHV"
+      unit: kWh
+      value: 55
+      is_exact: True
+    electricity_drying:
+      quote: "Energy demand of 0.05 kWh per kg dried H2"
+      unit: kWh
+      value: 0.05
+      is_exact: True
+    deionized_water:
+      quote: "9 kg H2O are required for producing 1 kg H2"
+      unit: kg
+      value: 9
+      is_exact: True
+      note: "Water conductivity has to be lower than 0.1 μS/cm to avoid certain system degradation issues"
+  output:
+    hydrogen_dried:
+      quote: "1 kg of dried hydrogen produced in Germany in a PEMWE plant, with a standard quality of 5.0 and 30 bar pressure"
+      unit: kg
+      value: 1
+      is_exact: True
+    oxygen:
+      quote: "H2O → H2 + 1/2O2"
+      unit: kg
+      value: 8
+      is_exact: True
+      note: "Calculated from stoichiometry of water electrolysis reaction"
+```
+
+The paper notes that manufacturing processes for the PEMWE stack and balance of plant have "negligible influence" on most impact categories, and while material inventories are provided in Tables 2 and 3, they are not normalized to per-kg hydrogen production in a way that allows for clear LCA process definition without additional calculations that would violate the "no calculations" instruction.

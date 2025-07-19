@@ -1,0 +1,752 @@
+- process: Multi-Si PV module production
+  output_reference:
+    output: PV_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 1.6
+      is_exact: True
+    glass:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_materials:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 2.2
+      is_exact: True
+    liquid:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 6.8
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1 (multi-Si)"
+      unit: kWh
+      value: 248
+      is_exact: True
+    oil:
+      quote: "Table 7.1 (multi-Si)"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1 (multi-Si)"
+      unit: MJ
+      value: 308
+      is_exact: True
+  output:
+    PV_module:
+      quote: "Table 7.1 (multi-Si) states materials and energy inputs in the production of Si modules—per m^2"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Mono-Si PV module production
+  output_reference:
+    output: PV_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 1.5
+      is_exact: True
+    glass:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_materials:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 7.8
+      is_exact: True
+    liquid:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 6.6
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1 (mono-Si)"
+      unit: kWh
+      value: 282
+      is_exact: True
+    oil:
+      quote: "Table 7.1 (mono-Si)"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1 (mono-Si)"
+      unit: MJ
+      value: 361
+      is_exact: True
+  output:
+    PV_module:
+      quote: "Table 7.1 (mono-Si) states materials and energy inputs in the production of Si modules—per m^2"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: CdTe PV module production
+  output_reference:
+    output: PV_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 0.065
+      is_exact: True
+    glass:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 19.2
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 0.6
+      is_exact: True
+    other_materials:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 2.0
+      is_exact: True
+    gases:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 0.001
+      is_exact: True
+    liquid:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 0.67
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1 (CdTe)"
+      unit: kg
+      value: 0.4
+      is_exact: True
+    electricity:
+      quote: "Table 7.1 (CdTe)"
+      unit: kWh
+      value: 59
+      is_exact: True
+    oil:
+      quote: "Table 7.1 (CdTe)"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1 (CdTe)"
+      unit: MJ
+      value: 0
+      is_exact: False
+      note: "Table 7.1 shows a dash for CdTe, indicating no stated natural gas use"
+  output:
+    PV_module:
+      quote: "Table 7.1 (CdTe) states materials and energy inputs in the production of CdTe modules—per m^2"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: GaInP/GaInAs/Ge wafer processing
+  output_reference:
+    output: wafers
+    unit: pieces
+    value: 1000
+    is_exact: True
+  input:
+    wafer_precursors:
+      quote: "Table 7.2. Materials and energy inputs for processing 1000 wafers"
+      unit: kg
+      value: 21.7
+      is_exact: True
+    contact_metals:
+      quote: "Table 7.2"
+      unit: kg
+      value: 3.4
+      is_exact: True
+    antireflection_coating:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.02
+      is_exact: True
+    hydrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 57.2
+      is_exact: True
+    nitrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.2
+      is_exact: True
+    photoresist:
+      quote: "Table 7.2"
+      unit: kg
+      value: 2.3
+      is_exact: True
+    solvents:
+      quote: "Table 7.2"
+      unit: kg
+      value: 1073.4
+      is_exact: True
+    acids:
+      quote: "Table 7.2"
+      unit: kg
+      value: 255.8
+      is_exact: True
+    bases:
+      quote: "Table 7.2"
+      unit: kg
+      value: 161.3
+      is_exact: True
+    electricity_MOVPE:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 2365
+      is_exact: True
+    electricity_other:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 470
+      is_exact: True
+  output:
+    wafers:
+      quote: "Table 7.2, corresponding to 915 kWp of GaInP/GaInAs/Ge terrestrial concentrator solar cell"
+      unit: pieces
+      value: 1000
+      is_exact: True
+    kWp_equivalent:
+      quote: "Table 7.2 indicates 915 kWp from 1000 wafers"
+      unit: kWp
+      value: 915
+      is_exact: True
+
+- process: Amonix 7700 CPV system
+  output_reference:
+    output: CPV_system
+    unit: pieces
+    value: 1
+    is_exact: True
+  input:
+    cell_semiconductor:
+      quote: "Table 7.3"
+      unit: kg
+      value: 0.2
+      is_exact: True
+    frame_steel:
+      quote: "Table 7.3"
+      unit: kg
+      value: 6566
+      is_exact: True
+    fresnel_lenses_acrylic:
+      quote: "Table 7.3"
+      unit: kg
+      value: 1143
+      is_exact: True
+    heat_sink_aluminium:
+      quote: "Table 7.3"
+      unit: kg
+      value: 3086
+      is_exact: True
+    foundation_concrete:
+      quote: "Table 7.3"
+      unit: kg
+      value: 3126
+      is_exact: True
+    hydraulic_drive_steel:
+      quote: "Table 7.3"
+      unit: kg
+      value: 2724
+      is_exact: True
+    pedestal_torque_tube_steel:
+      quote: "Table 7.3"
+      unit: kg
+      value: 11260
+      is_exact: True
+    motor_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 16
+      is_exact: True
+    inverter_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 500
+      is_exact: True
+    transformer_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 100
+      is_exact: True
+    cables_copper_pvc:
+      quote: "Table 7.3"
+      unit: kg
+      value: 35
+      is_exact: True
+    controller_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 18
+      is_exact: True
+    sensor_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 1.4
+      is_exact: True
+    anemometer_various:
+      quote: "Table 7.3"
+      unit: kg
+      value: 0.1
+      is_exact: True
+  output:
+    CPV_system:
+      quote: "Table 7.3. Material breakdown of the Amonix 7700"
+      unit: pieces
+      value: 1
+      is_exact: True
+
+- process: Phonix TectoSun on-roof mounting system
+  output_reference:
+    output: mounting_system
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    stainless_steel:
+      quote: "Table 7.4(a) Phönix, TectoSun"
+      unit: kg
+      value: 0.49
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(a) Phönix, TectoSun"
+      unit: kg
+      value: 0.54
+      is_exact: True
+    frame:
+      quote: "Table 7.4(a) Phönix, TectoSun"
+      unit: kg
+      value: 3.04
+      is_exact: True
+  output:
+    mounting_system:
+      quote: "Table 7.4(a) data for on-roof mounting systems"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Schletter Eco05+EcoG on-roof mounting system
+  output_reference:
+    output: mounting_system
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    stainless_steel:
+      quote: "Table 7.4(a) Schletter Eco05+EcoG"
+      unit: kg
+      value: 0.72
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(a) Schletter Eco05+EcoG"
+      unit: kg
+      value: 0.97
+      is_exact: True
+    frame:
+      quote: "Table 7.4(a) Schletter Eco05+EcoG"
+      unit: kg
+      value: 0
+      is_exact: True
+      note: "The table lists 0 for frame"
+  output:
+    mounting_system:
+      quote: "Table 7.4(a) data for on-roof mounting systems"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Schletter Plandach 5 in-roof mounting system
+  output_reference:
+    output: mounting_system
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    stainless_steel:
+      quote: "Table 7.4(a) Schletter Plandach 5"
+      unit: kg
+      value: 0.28
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(a) Schletter Plandach 5"
+      unit: kg
+      value: 1.21
+      is_exact: True
+    frame:
+      quote: "Table 7.4(a) Schletter Plandach 5"
+      unit: kg
+      value: 0
+      is_exact: True
+      note: "The table lists 0 for frame"
+  output:
+    mounting_system:
+      quote: "Table 7.4(a) data for in-roof mounting systems"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Schweizer Solrif in-roof mounting system
+  output_reference:
+    output: mounting_system
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    stainless_steel:
+      quote: "Table 7.4(a) Schweizer Solrif"
+      unit: kg
+      value: 0.08
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(a) Schweizer Solrif"
+      unit: kg
+      value: 1.71
+      is_exact: True
+    frame:
+      quote: "Table 7.4(a) Schweizer Solrif"
+      unit: kg
+      value: 0
+      is_exact: True
+      note: "The table lists 0 for frame"
+  output:
+    mounting_system:
+      quote: "Table 7.4(a) data for in-roof mounting systems"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Helukabel Solarflex 101 DC cable
+  output_reference:
+    output: DC_cable
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    copper:
+      quote: "Table 7.4(b) Helukabel Solarflex 101"
+      unit: g
+      value: 83.0
+      is_exact: True
+    thermoplastic_elastomer:
+      quote: "Table 7.4(b) Helukabel Solarflex 101"
+      unit: g
+      value: 64.0
+      is_exact: True
+    pvc:
+      quote: "Table 7.4(b) Helukabel Solarflex 101"
+      unit: g
+      value: 0
+      is_exact: True
+      note: "No PVC usage reported in DC cable"
+  output:
+    DC_cable:
+      quote: "Table 7.4(b) shows mass in g/m^2 for Helukabel Solarflex 101 DC"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Helukabel NYM-J AC cable
+  output_reference:
+    output: AC_cable
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    copper:
+      quote: "Table 7.4(b) Helukabel, NYM-J"
+      unit: g
+      value: 19.9
+      is_exact: True
+    thermoplastic_elastomer:
+      quote: "Table 7.4(b) Helukabel, NYM-J"
+      unit: g
+      value: 0
+      is_exact: True
+      note: "No TPE usage reported in AC cable"
+    pvc:
+      quote: "Table 7.4(b) Helukabel, NYM-J"
+      unit: g
+      value: 16.9
+      is_exact: True
+  output:
+    AC_cable:
+      quote: "Table 7.4(b) shows mass in g/m^2 for Helukabel NYM-J AC cable"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Philips PSI 500 inverter
+  output_reference:
+    output: inverter
+    unit: pieces
+    value: 1
+    is_exact: True
+  input:
+    steel:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 78
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 682
+      is_exact: True
+    copper:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 2
+      is_exact: True
+    polycarbonate:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 68
+      is_exact: True
+    abs:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 148
+      is_exact: True
+    other_plastics:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 5.4
+      is_exact: True
+    printed_circuit_board:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 100
+      is_exact: True
+    connector:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 50
+      is_exact: True
+    transformers_wire_wound:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 310
+      is_exact: True
+    coils:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 74
+      is_exact: True
+    transistor_diode:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 10
+      is_exact: True
+    capacitor_film:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 72
+      is_exact: True
+    capacitor_electrolytic:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 54
+      is_exact: True
+    other_electric_components:
+      quote: "Table 7.4(c) Philips PSI 500 (500W)"
+      unit: g
+      value: 20
+      is_exact: True
+  output:
+    inverter:
+      quote: "Table 7.4(c) Inverters (g)"
+      unit: pieces
+      value: 1
+      is_exact: True
+
+- process: Mastervolt SunMaster 2500 inverter
+  output_reference:
+    output: inverter
+    unit: pieces
+    value: 1
+    is_exact: True
+  input:
+    steel:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 9800
+      is_exact: True
+    aluminium:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 1400
+      is_exact: True
+    copper:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "No copper value provided in Table 7.4(c)"
+    printed_circuit_board:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 1800
+      is_exact: True
+    transformers_wire_wound:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 5500
+      is_exact: True
+    coils:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "Not listed in table"
+    transistor_diode:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "Not listed in table"
+    capacitor_film:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "Not listed in table"
+    capacitor_electrolytic:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "Not listed in table"
+    other_electric_components:
+      quote: "Table 7.4(c) Mastervolt SunMaster 2500 (2500W)"
+      unit: g
+      value: 0
+      is_exact: False
+      note: "Not listed in table"
+  output:
+    inverter:
+      quote: "Table 7.4(c) Inverters (g)"
+      unit: pieces
+      value: 1
+      is_exact: True
+
+- process: 3.5 MW TEP system BOS
+  output_reference:
+    output: bos
+    unit: MWp
+    value: 1
+    is_exact: True
+  input:
+    pv_support_structure:
+      quote: "Table 7.5"
+      unit: kg
+      value: 16821
+      is_exact: True
+    module_interconnections:
+      quote: "Table 7.5"
+      unit: kg
+      value: 453
+      is_exact: True
+    junction_boxes:
+      quote: "Table 7.5"
+      unit: kg
+      value: 1385
+      is_exact: True
+    conduits_fittings:
+      quote: "Table 7.5"
+      unit: kg
+      value: 6561
+      is_exact: True
+    wire_grounding_devices:
+      quote: "Table 7.5"
+      unit: kg
+      value: 5648
+      is_exact: True
+    inverters_transformers:
+      quote: "Table 7.5"
+      unit: kg
+      value: 28320
+      is_exact: True
+    grid_connections:
+      quote: "Table 7.5"
+      unit: kg
+      value: 1726
+      is_exact: True
+    office_facilities:
+      quote: "Table 7.5"
+      unit: kg
+      value: 20697
+      is_exact: True
+    concrete:
+      quote: "Table 7.5"
+      unit: kg
+      value: 76417
+      is_exact: True
+    miscellaneous:
+      quote: "Table 7.5"
+      unit: kg
+      value: 5806
+      is_exact: True
+    frame:
+      quote: "Table 7.5 indicates 'Frame' row"
+      unit: kg
+      value: 18141
+      is_exact: True
+  output:
+    bos:
+      quote: "Table 7.5. Mass balance of major components for the 3.5MW TEP system in Springerville"
+      unit: MWp
+      value: 1
+      is_exact: True

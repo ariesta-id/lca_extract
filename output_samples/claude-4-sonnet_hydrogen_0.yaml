@@ -1,0 +1,35 @@
+- process: Proton Exchange Membrane Water Electrolysis (PEMWE) Hydrogen Production
+  output_reference:
+    output: hydrogen_dried
+    unit: kg
+    value: 1
+    is_exact: True
+  input:
+    electricity_electrolysis:
+      quote: "55 kWh of electricity are necessary for water splitting at an efficiency of 60% LHV"
+      unit: kWh
+      value: 55
+      is_exact: True
+    electricity_drying:
+      quote: "Energy demand of 0.05 kWh per kg dried H2"
+      unit: kWh
+      value: 0.05
+      is_exact: True
+    deionized_water:
+      quote: "9 kg H2O are required for producing 1 kg H2"
+      unit: kg
+      value: 9
+      is_exact: True
+      note: "Water conductivity has to be lower than 0.1 μS/cm to avoid certain system degradation issues"
+  output:
+    hydrogen_dried:
+      quote: "1 kg of dried hydrogen produced in Germany in a PEMWE plant, with a standard quality of 5.0 and 30 bar pressure"
+      unit: kg
+      value: 1
+      is_exact: True
+    oxygen:
+      quote: "H2O → H2 + 1/2O2"
+      unit: kg
+      value: 8
+      is_exact: True
+      note: "Calculated from stoichiometry of water electrolysis reaction"

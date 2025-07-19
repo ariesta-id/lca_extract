@@ -1,0 +1,256 @@
+- process: Multi-Si PV Module Manufacturing
+  output_reference:
+    output: multi_si_pv_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1. Materials and energy inputs in the production of Si and CdTe PV modules—per m² of module"
+      unit: kg
+      value: 1.6
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 2.2
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 6.8
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 248
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1"
+      unit: MJ
+      value: 308
+      is_exact: True
+  output:
+    multi_si_pv_module:
+      quote: "Table 7.1. Materials and energy inputs in the production of Si and CdTe PV modules—per m² of module"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: Mono-Si PV Module Manufacturing
+  output_reference:
+    output: mono_si_pv_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.5
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 9.1
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.0
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 1.8
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 7.8
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 6.6
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 4.3
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 282
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+    natural_gas:
+      quote: "Table 7.1"
+      unit: MJ
+      value: 361
+      is_exact: True
+  output:
+    mono_si_pv_module:
+      quote: "Table 7.1. Materials and energy inputs in the production of Si and CdTe PV modules—per m² of module"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: CdTe PV Module Manufacturing
+  output_reference:
+    output: cdte_pv_module
+    unit: m^2
+    value: 1
+    is_exact: True
+  input:
+    cell_materials:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.065
+      is_exact: True
+    glass:
+      quote: "Table 7.1"
+      unit: kg
+      value: 19.2
+      is_exact: True
+    ethylene_vinyl_acetate:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.6
+      is_exact: True
+    other_components:
+      quote: "Table 7.1"
+      unit: kg
+      value: 2.0
+      is_exact: True
+    gases:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.001
+      is_exact: True
+    liquid:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.67
+      is_exact: True
+    other_consumables:
+      quote: "Table 7.1"
+      unit: kg
+      value: 0.4
+      is_exact: True
+    electricity:
+      quote: "Table 7.1"
+      unit: kWh
+      value: 59
+      is_exact: True
+    oil:
+      quote: "Table 7.1"
+      unit: L
+      value: 0.05
+      is_exact: True
+  output:
+    cdte_pv_module:
+      quote: "Table 7.1. Materials and energy inputs in the production of Si and CdTe PV modules—per m² of module"
+      unit: m^2
+      value: 1
+      is_exact: True
+
+- process: GaInP/GaInAs/Ge Solar Cell Processing
+  output_reference:
+    output: gainas_ge_solar_cells
+    unit: kWp
+    value: 915
+    is_exact: True
+  input:
+    wafer_precursors:
+      quote: "Table 7.2. Materials and energy inputs for processing 1000 wafers, corresponding to 915kWp of GaInP/GaInAs/Ge terrestrial concentrator solar cell"
+      unit: kg
+      value: 21.7
+      is_exact: True
+    contact_metals:
+      quote: "Table 7.2"
+      unit: kg
+      value: 3.4
+      is_exact: True
+    antireflection_coating:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.02
+      is_exact: True
+    hydrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 57.2
+      is_exact: True
+    nitrogen:
+      quote: "Table 7.2"
+      unit: kg
+      value: 0.2
+      is_exact: True
+    photoresist:
+      quote: "Table 7.2"
+      unit: kg
+      value: 2.3
+      is_exact: True
+    solvents:
+      quote: "Table 7.2"
+      unit: kg
+      value: 1073.4
+      is_exact: True
+    acids:
+      quote: "Table 7.2"
+      unit: kg
+      value: 255.8
+      is_exact: True
+    bases:
+      quote: "Table 7.2"
+      unit: kg
+      value: 161.3
+      is_exact: True
+    electricity_movpe:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 2365
+      is_exact: True
+    electricity_other:
+      quote: "Table 7.2"
+      unit: kWh
+      value: 470
+      is_exact: True
+      note: "Gas scrubbing and cell processing"
+  output:
+    gainas_ge_solar_cells:
+      quote: "Table 7.2. Materials and energy inputs for processing 1000 wafers, corresponding to 915kWp of GaInP/GaInAs/Ge terrestrial concentrator solar cell"
+      unit: kWp
+      value: 915
+      is_exact: True
